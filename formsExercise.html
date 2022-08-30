@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Exercise</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+        <legend>Customer Experience survey</legend>
+    <div>
+       
+       <label for="stote">Store Number</label>
+       <select id="store" name="store">
+        <option hidden>select store</option>
+        <option value="3570">3570</option>
+        <option value="1907">1907</option>
+        <option value="1220">1220</option>
+        <option value="0089">0089</option>
+       </select>
+    
+    </div>
+    <fieldset id="field1">
+        <legend>When you visited</legend>
+        <label for="visited">Date you visited</label>
+        <input type="date" id="visited" name="dateVisited" max="2022-12-31" min="2022-01-01">
+        <div>
+            <label for="time">Time</label>
+        <input type="time" id="timeVisited" name="timeVisited">
+    </div>
+    </fieldset>
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="nameFull" placeholder="name">
+   <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Email">
+    <fieldset>
+        <legend>How would you rate your level of satisfaction with your vist?</legend>
+        <div>
+        <input type="radio" id="satisfied" name="rate">
+        <label for="satisfied">Satisfied</label>
+        </div>
+        <div>
+        <input type="radio" id="neutral" name="rate" checked>
+        <label for="neutral">neutral</label>
+        </div>
+        <div>
+        <input type="radio" id="dissatisfied" name="rate">
+        <label for="dissatisfied">Dissatisfied</label>
+        </div>
+    </fieldset>
+    <div>
+        <label for="exe">Tell us about your experience</label>
+        <br>
+        <textarea name="textExe" id="exe" cols="30" rows="2"></textarea>
+        <div>
+            <label for="times">Times visited in the last month:</label>
+            <br>
+            <input type="number" id="times" name="times" min="1" max="30">
+        </div>
+        <input type="checkbox" id="check" required checked>
+        <label for="check">Please check the box if you would be willing to be contacted about your experience</label>
+    </div>
+    <label for="password">Create a password</label>
+    <input type="password" name="password" id="password" pattern=".(5,10)">
+    <br>
+   <input type="submit" value="submit">
+   <input type="reset" value="reset">
+    </fieldset>   
+  </form>  
+</body>
+</html>
